@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_types"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView_type_food"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginRight="15dp"
+                    android:onClick="onClick"
+                    android:src="@drawable/food" />
+
+                <ImageView
+                    android:id="@+id/imageView_type_fruits"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:onClick="onClick"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/fruit" />
+
+                <ImageView
+                    android:id="@+id/imageView_type_communication"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:onClick="onClick"
+                    android:src="@drawable/communication" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView_type_education"
+                    android:layout_width="90dp"
+                    android:onClick="onClick"
+                    android:layout_height="90dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/education" />
+
+                <ImageView
+                    android:id="@+id/imageView_type_trip"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:onClick="onClick"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/trip" />
+
+                <ImageView
+                    android:id="@+id/imageView_type_cloth"
+                    android:layout_width="90dp"
+                    android:onClick="onClick"
+                    android:layout_height="90dp"
+                    android:src="@drawable/clothes" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView_type_medical"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:onClick="onClick"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/medical" />
+
+                <ImageView
+                    android:id="@+id/imageView_type_entertainment"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:onClick="onClick"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/entertainment" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView_type_takePhotos"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/take_photos"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout_types"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:onClick="onClick"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/imageView_type_takePhotos"
+            android:gravity="center_horizontal"
+            android:text="Take a photo"
+            android:textStyle="bold"
+            />
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/button_add_back"
+            android:onClick="onClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:padding="10dp"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:orientation="horizontal"
+       android:layout_height="wrap_content">
+
+       <RadioButton
+           android:id="@+id/radioButton_outcome"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Outcome"
+           />
+
+       <RadioButton
+           android:id="@+id/radioButton_income"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Income"/>
+
+   </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+    
+    <EditText
+        android:id="@+id/editText_input_price_take_photo"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="How much"
+        android:digits=".1234567890"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button_take_photo_popup_ok"
+            android:layout_marginTop="10dp"
+            android:text="OK"
+            android:background="@drawable/button_background_roundcorner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/button_take_photo_popup_cancel"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="CANCEL"
+            android:background="@drawable/button_background_roundcorner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>
