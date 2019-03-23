@@ -34,7 +34,6 @@ public class LoginActivity extends MyActivityManager {
                 if(username.equals("") || password.equals("")){
                     Toast.makeText(LoginActivity.this, "Username or Password can't be vacant!", Toast.LENGTH_SHORT).show();
                 }else{
-                    //进行账号密码验证进行登陆
                     if(username.equals("admin") && password.equals("admin")){
                         Intent intent=new Intent(LoginActivity.this, MainActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
