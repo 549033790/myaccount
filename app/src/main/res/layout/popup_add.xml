@@ -31,8 +31,8 @@
             android:layout_marginLeft="30dp"
             android:layout_marginRight="10dp"
             android:hint="How much"
+            android:inputType="numberDecimal"
             android:gravity="center"
-            android:digits=".1234567890"
             android:maxLines="1"
             android:layout_weight="1" />
 
