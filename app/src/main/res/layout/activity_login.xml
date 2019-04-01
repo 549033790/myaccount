@@ -11,7 +11,7 @@
     <ImageView
         android:id="@+id/imageVIew_icon"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="100dp"
         android:layout_marginTop="30dp"
         android:src="@drawable/icon"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,6 +25,7 @@
         app:layout_constraintTop_toBottomOf="@id/imageVIew_icon" />
 
     <LinearLayout
+        android:id="@+id/linearLayout_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -45,7 +46,7 @@
 
             <EditText
                 android:id="@+id/editText_input_account"
-                android:layout_width="200dp"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:hint="Account"
@@ -60,6 +61,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:gravity="center"
+            android:id="@+id/linearLayout_password"
             android:orientation="horizontal">
 
             <ImageView
@@ -69,7 +71,7 @@
 
             <EditText
                 android:id="@+id/editText_input_password"
-                android:layout_width="200dp"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:hint="Password"
@@ -93,6 +95,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_input"
         android:background="@drawable/button_background_roundcorner"
         android:text="Login"/>
 

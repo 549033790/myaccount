@@ -262,7 +262,7 @@ public class AddActivity extends MyActivityManager implements View.OnClickListen
         });
 
         // 参数2,3：指明popupwindow的宽度和高度
-        popupWindow = new PopupWindow(popupView, 600, 600);
+        popupWindow = new PopupWindow(popupView, 300, 300);
         WindowManager.LayoutParams lp = getWindow().getAttributes();
         lp.alpha = 0.4f;
         getWindow().setAttributes(lp);

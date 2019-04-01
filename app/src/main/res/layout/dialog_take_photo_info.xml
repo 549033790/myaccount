@@ -48,7 +48,6 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:hint="How much"
-        android:inputType="numberDecimal"
         android:digits=".1234567890"/>
 
     <LinearLayout
