@@ -49,7 +49,7 @@ public class AddActivity extends MyActivityManager implements View.OnClickListen
     private MyFragmentPagerAdapter mAdapter;
     private ViewPager mViewPager;
     private MyAccount myAccount=new MyAccount(); //用来添加用的
-    SimpleDateFormat format=new SimpleDateFormat("YYYY-MM-dd HH:mm:ss");
+    SimpleDateFormat format=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     PopupWindow popupWindow;
     View popupView;
     TranslateAnimation animation;
@@ -137,7 +137,7 @@ public class AddActivity extends MyActivityManager implements View.OnClickListen
             case R.id.imageView_type_takePhotos:
                 //处理自己拍照记录的情况
                 //运行时权限处理，这里需要相机权限和读写内部储存的权限
-                SimpleDateFormat formatImageName=new SimpleDateFormat("YYYYMMdd_HHmmss");
+                SimpleDateFormat formatImageName=new SimpleDateFormat("yyyyMMdd_hhmmss");
                 outputImageName=formatImageName.format(new Date())+".jpg";
                 if(ContextCompat.checkSelfPermission(AddActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE)!= PackageManager.PERMISSION_GRANTED){
                     ActivityCompat.requestPermissions(AddActivity.this,new String[]{
